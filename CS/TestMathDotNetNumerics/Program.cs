@@ -1,8 +1,11 @@
-﻿using System.Diagnostics;
-using System;
+﻿using System;
 using MathNet.Numerics.LinearAlgebra;
 
-namespace testMathDotNetNu
+/// <summary>
+/// https://numerics.mathdotnet.com/
+/// https://numerics.mathdotnet.com/Matrix.html
+/// </summary>
+namespace TestMathDotNetNumerics
 {
     class Program
     {
