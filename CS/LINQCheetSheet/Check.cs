@@ -1,4 +1,4 @@
-using System.Linq;
+﻿using System.Linq;
 
 namespace LINQCheetSheet
 {
@@ -13,7 +13,7 @@ namespace LINQCheetSheet
             Program.Write("Count", count);
 
             //CountBool
-            int countEven = enumerable.Count(i => i%2 == 0);
+            int countEven = enumerable.Count(i => i % 2 == 0);
             Program.Write("CountEven", countEven);
 
             //All
@@ -21,7 +21,7 @@ namespace LINQCheetSheet
             Program.Write("All", all);
 
             //Any
-            bool anyEven = enumerable.Any(i => i%2 == 0);
+            bool anyEven = enumerable.Any(i => i % 2 == 0);
             Program.Write("Any", anyEven);
         }
     }

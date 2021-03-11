@@ -1,4 +1,4 @@
-using System.Linq;
+﻿using System.Linq;
 
 namespace LINQCheetSheet
 {
@@ -13,7 +13,7 @@ namespace LINQCheetSheet
             Program.Write("Where", evens);
 
             //Select
-            var aquares = enumerable.Select(i => i*i);
+            var aquares = enumerable.Select(i => i * i);
             Program.Write("Select", aquares);
 
             //Take
@@ -25,11 +25,11 @@ namespace LINQCheetSheet
             Program.Write("Skip", sevenEightNine);
 
             //TakeWhile
-            var while4 = enumerable.TakeWhile(i => (i + 1)%5 != 0);
+            var while4 = enumerable.TakeWhile(i => (i + 1) % 5 != 0);
             Program.Write("TakeWhile", while4);
 
             //SkipWhile
-            var skip4 = enumerable.SkipWhile(i => (i + 1)%5 != 0);
+            var skip4 = enumerable.SkipWhile(i => (i + 1) % 5 != 0);
             Program.Write("SkipWhile", skip4);
 
             //First
@@ -49,7 +49,7 @@ namespace LINQCheetSheet
             Program.Write("Last", last);
 
             //Single
-            var single = new[] {19}.Single();
+            var single = new[] { 19 }.Single();
             Program.Write("Single", single);
 
             //Single(Bool)
