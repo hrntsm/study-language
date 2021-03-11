@@ -8,6 +8,7 @@ namespace LINQCheetSheet
         static void Main(string[] args)
         {
             Foundation.Start();
+            Check.Start();
         }
 
         public static void Write<T>(string tag, IEnumerable<T> e)
