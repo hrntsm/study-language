@@ -11,6 +11,7 @@ namespace LINQCheetSheet
             Check.Start();
             Instantiate.Start();
             Math.Start();
+            Generate.Start();
         }
 
         public static void Write<T>(string tag, IEnumerable<T> e)
