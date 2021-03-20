@@ -56,7 +56,7 @@ public class Script_Instance : GH_ScriptInstance
   /// </summary>
   private void RunScript(Brep brep, bool write, ref object A)
   {
-        var aDoc = RhinoDoc.ActiveDoc;
+    var aDoc = RhinoDoc.ActiveDoc;
     int index = aDoc.Layers.Find("aaa", true);
     var parents = aDoc.Layers[index];
     if(write == true)
