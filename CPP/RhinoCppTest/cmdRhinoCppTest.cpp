@@ -61,32 +61,75 @@ static class CCommandRhinoCppTest theRhinoCppTestCommand;
 
 CRhinoCommand::result CCommandRhinoCppTest::RunCommand(const CRhinoCommandContext& context)
 {
-  // CCommandRhinoCppTest::RunCommand() is called when the user
-  // runs the "RhinoCppTest".
+    ON_Plane plane = ON_xy_plane;
+    double height = 10.0;
+    double radius = 5.0;
+    bool bCapBottom = FALSE;
 
-  // TODO: Add command code here.
+    CRhinoGetOption ro;
+    ro.SetCommandPrompt(L"Command options");
+    ro.AcceptNothing();
+    
+    for (;;)
+    {
+        ro.ClearCommandOptions();
 
-  // Rhino command that display a dialog box interface should also support
-  // a command-line, or script-able interface.
+        int hval_option_index = ro.AddCommandOptionNumber(
+            RHCMDOPTNAME(L"Height"), &height, L"height value", FALSE, 1.0, 10, 0
+        );
+        int rval_option_index = ro.AddCommandOptionNumber(
+            RHCMDOPTNAME(L"Radius"), &radius, L"radius value", FALSE, 0.1, 10.0
+        );
+        int bval_option_index = ro.AddCommandOptionToggle(
+            RHCMDOPTNAME(L"CapBottom"), RHCMDOPTVALUE(L"False"), RHCMDOPTVALUE(L"True"), bCapBottom, &bCapBottom
+        );
+        int test_option_index = ro.AddCommandOption(
+            RHCMDOPTNAME(L"Test")
+        );
+        
+        CRhinoGet::result res = ro.GetOption();
+        if (res == CRhinoGet::nothing)
+            break;
 
-  ON_wString str;
-  str.Format(L"The \"%s\" command is under construction.\n", EnglishCommandName());
-  const wchar_t* pszStr = static_cast<const wchar_t*>(str);
-  if (context.IsInteractive())
-    RhinoMessageBox(pszStr, RhinoCppTestPlugIn().PlugInName(), MB_OK);
-  else
-    RhinoApp().Print(pszStr);
+        if (res == CRhinoGet::cancel)
+            return CRhinoCommand::cancel;
 
-  // TODO: Return one of the following values:
-  //   CRhinoCommand::success:  The command worked.
-  //   CRhinoCommand::failure:  The command failed because of invalid input, inability
-  //                            to compute the desired result, or some other reason
-  //                            computation reason.
-  //   CRhinoCommand::cancel:   The user interactively canceled the command 
-  //                            (by pressing ESCAPE, clicking a CANCEL button, etc.)
-  //                            in a Get operation, dialog, time consuming computation, etc.
+        if (res != CRhinoGet::option)
+            return CRhinoCommand::failure;
 
-  return CRhinoCommand::success;
+        const CRhinoCommandOption* option = ro.Option();
+        if (nullptr == option)
+            return CRhinoCommand::failure;
+
+        int option_index = option->m_option_index;
+
+        if (option_index == hval_option_index)
+            continue; // nothing to do
+
+        if (option_index == rval_option_index)
+            continue; // nothing to do
+    }
+
+    ON_Cone cone(plane, height, radius);
+    if (cone.IsValid())
+    {
+        ON_Brep* cone_brep = ON_BrepCone(cone, bCapBottom);
+        if (cone_brep)
+        {
+            CRhinoBrepObject *cone_objct = new CRhinoBrepObject();
+            cone_objct->SetBrep(cone_brep);
+            context.m_doc.AddObject(cone_objct);
+            context.m_doc.Redraw();
+        }
+    }
+
+       // CRhinoGet::result res = go.GetOption();
+
+        //if (option_index == bval_option_index)
+        //    continue; // nothing to do
+    //}
+
+    return CRhinoCommand::success;
 }
 
 #pragma endregion
