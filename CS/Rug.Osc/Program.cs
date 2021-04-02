@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using Rug.Osc; 
 
@@ -21,13 +23,30 @@ class Program
         receiver = new OscReceiver(port);
 
         // Create a thread to do the listening
-        thread = new Thread(new ThreadStart(ListenLoop));
+        // thread = new Thread(new ThreadStart(ListenLoop));
 
         // Connect the receiver
         receiver.Connect();
 
         // Start the listen thread
-        thread.Start();
+        // thread.Start();
+
+        // if we are in a state to recieve
+        if (receiver.State == OscSocketState.Connected)
+        {
+            // get the next message 
+            // this will block until one arrives or the socket is closed
+            var packet = receiver.Receive() as OscBundle;
+
+            foreach (OscMessage oscPacket in packet)
+            {
+                var item = oscPacket;
+            }
+            // Write the packet to the console 
+            Console.WriteLine(packet.ToString());
+
+            // DO SOMETHING HERE!
+        }
 
         // wait for a key press to exit
         Console.WriteLine("Press any key to exit");
@@ -37,7 +56,7 @@ class Program
         receiver.Close();
 
         // Wait for the listen thread to exit
-        thread.Join();
+        // thread.Join();
     }
 
     static void ListenLoop()
