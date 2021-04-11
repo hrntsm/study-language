@@ -64,7 +64,7 @@ function init() {
 
         const radian = (rot * Math.PI) / 180;
         camera.position.x = 1000 * Math.sin(radian);
-        camera.position.x = 1000 * Math.cos(radian);
+        camera.position.z = 1000 * Math.cos(radian);
 
         camera.lookAt(new THREE.Vector3(0, 0, 0));
         earthMesh.rotation.y += 0.01;
