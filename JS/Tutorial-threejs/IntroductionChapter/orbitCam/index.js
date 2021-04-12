@@ -14,7 +14,9 @@ function init() {
     const camera = new THREE.PerspectiveCamera(45, width / height);
     camera.position.set(0, 0, 1000);
 
-    const controls = new THREE.OrbirControls(camera);
+    const controls = new THREE.OrbitControls(camera);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.2;
 
     const mesh = new THREE.Mesh(
         new THREE.BoxGeometry(300, 300, 300),
@@ -25,6 +27,7 @@ function init() {
     tick();
 
     function tick() {
+        controls.update();
         renderer.render(scene, camera);
         requestAnimationFrame(tick);
     }
