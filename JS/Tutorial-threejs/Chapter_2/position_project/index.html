@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div style="position: relative; overflow: hidden; width: 960px; height: 540px">
+      <canvas id="myCanvas" style="position: relative; top: 0; left: 0;"></canvas>
+
+      <svg width="960" height="540" style="position: absolute; top: 0; left: 0;">
+        <g stroke="white">
+          <line id="svgLine" x1="0" y1="0" x2="0" y2="0" stroke-width="3" />
+        </g>
+      </svg>
+
+      <div id="hub" style="position: absolute; top: 0; left: 0; background: white;"></div>
+    </div>
+  </body>
+</html>
