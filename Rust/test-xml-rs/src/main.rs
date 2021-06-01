@@ -63,12 +63,17 @@ fn main() {
     let read_path = String::from("file_in.stb");
     let write_path = String::from("file_out.stb");
     read_stb(&read_path);
+
+
+    //TODO: 以下の関数から書き出しを呼ぶようにする
     // write_stb(&write_path);
 
     let mut file = File::create(write_path).unwrap();
 
     let mut input = io::stdin();
     let mut output = io::stdout();
+
+    //TODO: input の STB を書き出せるようにする。今は CLI でのインプットまち
     let mut writer = EmitterConfig::new()
         .perform_indent(true)
         .create_writer(&mut file);
