@@ -45,30 +45,8 @@ fn read_stb(path: &String) {
     }
 }
 
-// fn write_stb(path: &String) -> bool {}
-
-fn handle_event<W: Write>(w: &mut EventWriter<W>, line: String) -> Result<()> {
-    let line = line.trim();
-    let event: xml::writer::XmlEvent = if line.starts_with("+") && line.len() > 1 {
-        xml::writer::XmlEvent::start_element(&line[1..]).into()
-    } else if line.starts_with("-") {
-        xml::writer::XmlEvent::end_element().into()
-    } else {
-        xml::writer::XmlEvent::Characters(&line).into()
-    };
-    w.write(event)
-}
-
-fn main() {
-    let read_path = String::from("file_in.stb");
-    let write_path = String::from("file_out.stb");
-    read_stb(&read_path);
-
-
-    //TODO: 以下の関数から書き出しを呼ぶようにする
-    // write_stb(&write_path);
-
-    let mut file = File::create(write_path).unwrap();
+fn write_stb(path: &String) {
+    let mut file = File::create(path).unwrap();
 
     let mut input = io::stdin();
     let mut output = io::stdout();
@@ -90,4 +68,23 @@ fn main() {
             Err(e) => panic!("Input error: {}", e),
         }
     }
+}
+
+fn handle_event<W: Write>(w: &mut EventWriter<W>, line: String) -> Result<()> {
+    let line = line.trim();
+    let event: xml::writer::XmlEvent = if line.starts_with("+") && line.len() > 1 {
+        xml::writer::XmlEvent::start_element(&line[1..]).into()
+    } else if line.starts_with("-") {
+        xml::writer::XmlEvent::end_element().into()
+    } else {
+        xml::writer::XmlEvent::Characters(&line).into()
+    };
+    w.write(event)
+}
+
+fn main() {
+    let read_path = String::from("file_in.stb");
+    let write_path = String::from("file_out.stb");
+    read_stb(&read_path);
+    write_stb(&write_path);
 }
