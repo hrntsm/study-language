@@ -1,3 +1,5 @@
+//TODO: stb ファルダで write.rs と read.rs にしたときはどう呼ぶか調べる
+
 use xml::reader::{EventReader, XmlEvent};
 
 use std::fs::File;
