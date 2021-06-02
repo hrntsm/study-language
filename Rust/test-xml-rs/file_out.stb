@@ -1,4 +1,692 @@
 <?xml version="1.0" encoding="utf-8"?>
-<test>
-  <aaa />
-  <test>
+<{https://www.building-smart.or.jp/dl}ST_BRIDGE>
+    <{https://www.building-smart.or.jp/dl}StbCommon>
+        <{https://www.building-smart.or.jp/dl}StbApplyConditionsList>
+            <{https://www.building-smart.or.jp/dl}StbColumn_RC_RebarPositionApply />
+            <{https://www.building-smart.or.jp/dl}StbColumn_RC_BarSpacingApply />
+            <{https://www.building-smart.or.jp/dl}StbColumn_SRC_RebarPositionApply />
+            <{https://www.building-smart.or.jp/dl}StbColumn_SRC_BarSpacingApply />
+            <{https://www.building-smart.or.jp/dl}StbBeam_RC_RebarPositionApply />
+            <{https://www.building-smart.or.jp/dl}StbBeam_RC_BarWebApply />
+            <{https://www.building-smart.or.jp/dl}StbBeam_RC_BarSpacingApply />
+            <{https://www.building-smart.or.jp/dl}StbBeam_SRC_RebarPositionApply />
+            <{https://www.building-smart.or.jp/dl}StbBeam_SRC_BarWebApply />
+            <{https://www.building-smart.or.jp/dl}StbBeam_SRC_BarSpacingApply />
+        </{https://www.building-smart.or.jp/dl}StbApplyConditionsList>
+    </{https://www.building-smart.or.jp/dl}StbCommon>
+    <{https://www.building-smart.or.jp/dl}StbModel>
+        <{https://www.building-smart.or.jp/dl}StbNodes>
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+            <{https://www.building-smart.or.jp/dl}StbNode />
+        </{https://www.building-smart.or.jp/dl}StbNodes>
+        <{https://www.building-smart.or.jp/dl}StbAxes>
+            <{https://www.building-smart.or.jp/dl}StbParallelAxes>
+                <{https://www.building-smart.or.jp/dl}StbParallelAxis>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdList>
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    </{https://www.building-smart.or.jp/dl}StbNodeIdList>
+                </{https://www.building-smart.or.jp/dl}StbParallelAxis>
+                <{https://www.building-smart.or.jp/dl}StbParallelAxis>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdList>
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    </{https://www.building-smart.or.jp/dl}StbNodeIdList>
+                </{https://www.building-smart.or.jp/dl}StbParallelAxis>
+                <{https://www.building-smart.or.jp/dl}StbParallelAxis>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdList>
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    </{https://www.building-smart.or.jp/dl}StbNodeIdList>
+                </{https://www.building-smart.or.jp/dl}StbParallelAxis>
+            </{https://www.building-smart.or.jp/dl}StbParallelAxes>
+            <{https://www.building-smart.or.jp/dl}StbParallelAxes>
+                <{https://www.building-smart.or.jp/dl}StbParallelAxis>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdList>
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    </{https://www.building-smart.or.jp/dl}StbNodeIdList>
+                </{https://www.building-smart.or.jp/dl}StbParallelAxis>
+                <{https://www.building-smart.or.jp/dl}StbParallelAxis>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdList>
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    </{https://www.building-smart.or.jp/dl}StbNodeIdList>
+                </{https://www.building-smart.or.jp/dl}StbParallelAxis>
+                <{https://www.building-smart.or.jp/dl}StbParallelAxis>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdList>
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                        <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    </{https://www.building-smart.or.jp/dl}StbNodeIdList>
+                </{https://www.building-smart.or.jp/dl}StbParallelAxis>
+            </{https://www.building-smart.or.jp/dl}StbParallelAxes>
+        </{https://www.building-smart.or.jp/dl}StbAxes>
+        <{https://www.building-smart.or.jp/dl}StbStories>
+            <{https://www.building-smart.or.jp/dl}StbStory>
+                <{https://www.building-smart.or.jp/dl}StbNodeIdList>
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                </{https://www.building-smart.or.jp/dl}StbNodeIdList>
+            </{https://www.building-smart.or.jp/dl}StbStory>
+            <{https://www.building-smart.or.jp/dl}StbStory>
+                <{https://www.building-smart.or.jp/dl}StbNodeIdList>
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                </{https://www.building-smart.or.jp/dl}StbNodeIdList>
+            </{https://www.building-smart.or.jp/dl}StbStory>
+            <{https://www.building-smart.or.jp/dl}StbStory>
+                <{https://www.building-smart.or.jp/dl}StbNodeIdList>
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                    <{https://www.building-smart.or.jp/dl}StbNodeId />
+                </{https://www.building-smart.or.jp/dl}StbNodeIdList>
+            </{https://www.building-smart.or.jp/dl}StbStory>
+        </{https://www.building-smart.or.jp/dl}StbStories>
+        <{https://www.building-smart.or.jp/dl}StbMembers>
+            <{https://www.building-smart.or.jp/dl}StbColumns>
+                <{https://www.building-smart.or.jp/dl}StbColumn />
+                <{https://www.building-smart.or.jp/dl}StbColumn />
+                <{https://www.building-smart.or.jp/dl}StbColumn />
+                <{https://www.building-smart.or.jp/dl}StbColumn />
+                <{https://www.building-smart.or.jp/dl}StbColumn />
+                <{https://www.building-smart.or.jp/dl}StbColumn />
+                <{https://www.building-smart.or.jp/dl}StbColumn />
+                <{https://www.building-smart.or.jp/dl}StbColumn />
+                <{https://www.building-smart.or.jp/dl}StbColumn />
+                <{https://www.building-smart.or.jp/dl}StbColumn />
+                <{https://www.building-smart.or.jp/dl}StbColumn />
+                <{https://www.building-smart.or.jp/dl}StbColumn />
+                <{https://www.building-smart.or.jp/dl}StbColumn />
+                <{https://www.building-smart.or.jp/dl}StbColumn />
+                <{https://www.building-smart.or.jp/dl}StbColumn />
+                <{https://www.building-smart.or.jp/dl}StbColumn />
+                <{https://www.building-smart.or.jp/dl}StbColumn />
+            </{https://www.building-smart.or.jp/dl}StbColumns>
+            <{https://www.building-smart.or.jp/dl}StbGirders>
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+                <{https://www.building-smart.or.jp/dl}StbGirder />
+            </{https://www.building-smart.or.jp/dl}StbGirders>
+            <{https://www.building-smart.or.jp/dl}StbBeams>
+                <{https://www.building-smart.or.jp/dl}StbBeam />
+                <{https://www.building-smart.or.jp/dl}StbBeam />
+                <{https://www.building-smart.or.jp/dl}StbBeam />
+                <{https://www.building-smart.or.jp/dl}StbBeam />
+                <{https://www.building-smart.or.jp/dl}StbBeam />
+                <{https://www.building-smart.or.jp/dl}StbBeam />
+                <{https://www.building-smart.or.jp/dl}StbBeam />
+                <{https://www.building-smart.or.jp/dl}StbBeam />
+                <{https://www.building-smart.or.jp/dl}StbBeam />
+                <{https://www.building-smart.or.jp/dl}StbBeam />
+                <{https://www.building-smart.or.jp/dl}StbBeam />
+            </{https://www.building-smart.or.jp/dl}StbBeams>
+            <{https://www.building-smart.or.jp/dl}StbSlabs>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                    <{https://www.building-smart.or.jp/dl}StbSlabOffsetList>
+                        <{https://www.building-smart.or.jp/dl}StbSlabOffset />
+                        <{https://www.building-smart.or.jp/dl}StbSlabOffset />
+                        <{https://www.building-smart.or.jp/dl}StbSlabOffset />
+                        <{https://www.building-smart.or.jp/dl}StbSlabOffset />
+                    </{https://www.building-smart.or.jp/dl}StbSlabOffsetList>
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                    <{https://www.building-smart.or.jp/dl}StbSlabOffsetList>
+                        <{https://www.building-smart.or.jp/dl}StbSlabOffset />
+                        <{https://www.building-smart.or.jp/dl}StbSlabOffset />
+                        <{https://www.building-smart.or.jp/dl}StbSlabOffset />
+                        <{https://www.building-smart.or.jp/dl}StbSlabOffset />
+                    </{https://www.building-smart.or.jp/dl}StbSlabOffsetList>
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                    <{https://www.building-smart.or.jp/dl}StbSlabOffsetList>
+                        <{https://www.building-smart.or.jp/dl}StbSlabOffset />
+                        <{https://www.building-smart.or.jp/dl}StbSlabOffset />
+                        <{https://www.building-smart.or.jp/dl}StbSlabOffset />
+                        <{https://www.building-smart.or.jp/dl}StbSlabOffset />
+                    </{https://www.building-smart.or.jp/dl}StbSlabOffsetList>
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                    <{https://www.building-smart.or.jp/dl}StbSlabOffsetList>
+                        <{https://www.building-smart.or.jp/dl}StbSlabOffset />
+                        <{https://www.building-smart.or.jp/dl}StbSlabOffset />
+                        <{https://www.building-smart.or.jp/dl}StbSlabOffset />
+                        <{https://www.building-smart.or.jp/dl}StbSlabOffset />
+                    </{https://www.building-smart.or.jp/dl}StbSlabOffsetList>
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+                <{https://www.building-smart.or.jp/dl}StbSlab>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbSlab>
+            </{https://www.building-smart.or.jp/dl}StbSlabs>
+            <{https://www.building-smart.or.jp/dl}StbWalls>
+                <{https://www.building-smart.or.jp/dl}StbWall>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbWall>
+                <{https://www.building-smart.or.jp/dl}StbWall>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbWall>
+                <{https://www.building-smart.or.jp/dl}StbWall>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbWall>
+                <{https://www.building-smart.or.jp/dl}StbWall>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbWall>
+                <{https://www.building-smart.or.jp/dl}StbWall>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbWall>
+                <{https://www.building-smart.or.jp/dl}StbWall>
+                    <{https://www.building-smart.or.jp/dl}StbNodeIdOrder />
+                </{https://www.building-smart.or.jp/dl}StbWall>
+            </{https://www.building-smart.or.jp/dl}StbWalls>
+            <{https://www.building-smart.or.jp/dl}StbFootings>
+                <{https://www.building-smart.or.jp/dl}StbFooting />
+                <{https://www.building-smart.or.jp/dl}StbFooting />
+                <{https://www.building-smart.or.jp/dl}StbFooting />
+                <{https://www.building-smart.or.jp/dl}StbFooting />
+                <{https://www.building-smart.or.jp/dl}StbFooting />
+                <{https://www.building-smart.or.jp/dl}StbFooting />
+                <{https://www.building-smart.or.jp/dl}StbFooting />
+                <{https://www.building-smart.or.jp/dl}StbFooting />
+                <{https://www.building-smart.or.jp/dl}StbFooting />
+            </{https://www.building-smart.or.jp/dl}StbFootings>
+            <{https://www.building-smart.or.jp/dl}StbParapets>
+                <{https://www.building-smart.or.jp/dl}StbParapet />
+                <{https://www.building-smart.or.jp/dl}StbParapet />
+                <{https://www.building-smart.or.jp/dl}StbParapet />
+                <{https://www.building-smart.or.jp/dl}StbParapet />
+                <{https://www.building-smart.or.jp/dl}StbParapet />
+                <{https://www.building-smart.or.jp/dl}StbParapet />
+                <{https://www.building-smart.or.jp/dl}StbParapet />
+                <{https://www.building-smart.or.jp/dl}StbParapet />
+            </{https://www.building-smart.or.jp/dl}StbParapets>
+        </{https://www.building-smart.or.jp/dl}StbMembers>
+        <{https://www.building-smart.or.jp/dl}StbSections>
+            <{https://www.building-smart.or.jp/dl}StbSecColumn_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureColumn_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecColumn_RC_Rect />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureColumn_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementColumn_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarColumn_RC_RectSame />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementColumn_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecColumn_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecColumn_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureColumn_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecColumn_RC_Rect />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureColumn_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementColumn_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarColumn_RC_RectSame />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementColumn_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecColumn_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecColumn_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureColumn_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecColumn_RC_Rect />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureColumn_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementColumn_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarColumn_RC_RectSame />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementColumn_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecColumn_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecColumn_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureColumn_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecColumn_RC_Rect />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureColumn_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementColumn_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarColumn_RC_RectSame />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementColumn_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecColumn_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecBeam_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureBeam_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBeam_RC_Straight />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureBeam_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementBeam_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarBeam_RC_Same />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementBeam_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecBeam_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecBeam_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureBeam_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBeam_RC_Straight />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureBeam_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementBeam_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarBeam_RC_Same />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementBeam_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecBeam_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecBeam_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureBeam_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBeam_RC_Straight />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureBeam_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementBeam_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarBeam_RC_ThreeTypes />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarBeam_RC_ThreeTypes />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarBeam_RC_ThreeTypes />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementBeam_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecBeam_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecBeam_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureBeam_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBeam_RC_Straight />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureBeam_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementBeam_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarBeam_RC_ThreeTypes />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarBeam_RC_ThreeTypes />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarBeam_RC_ThreeTypes />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementBeam_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecBeam_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecBeam_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureBeam_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBeam_RC_Straight />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureBeam_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementBeam_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarBeam_RC_ThreeTypes />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarBeam_RC_ThreeTypes />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarBeam_RC_ThreeTypes />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementBeam_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecBeam_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecBeam_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureBeam_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBeam_RC_Straight />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureBeam_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementBeam_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarBeam_RC_ThreeTypes />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarBeam_RC_ThreeTypes />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarBeam_RC_ThreeTypes />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementBeam_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecBeam_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecBeam_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureBeam_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBeam_RC_Straight />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureBeam_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementBeam_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarBeam_RC_Same />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementBeam_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecBeam_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecSlab_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureSlab_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecSlab_RC_Straight />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureSlab_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementSlab_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_Standard />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_Standard />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_Standard />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_Standard />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_Standard />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_Standard />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_Standard />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_Standard />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementSlab_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecSlab_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecSlab_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureSlab_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecSlab_RC_Straight />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureSlab_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementSlab_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_Standard />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_Standard />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_Standard />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_Standard />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_Standard />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_Standard />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_Standard />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_Standard />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementSlab_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecSlab_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecSlab_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureSlab_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecSlab_RC_Straight />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureSlab_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementSlab_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_Standard />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_Standard />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_Standard />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_Standard />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_Standard />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_Standard />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_Standard />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_Standard />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementSlab_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecSlab_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecSlab_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureSlab_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecSlab_RC_Straight />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureSlab_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementSlab_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_1Way2 />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_1Way2 />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_1Way2 />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_1Way2 />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_1Way2 />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarSlab_RC_1Way2 />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementSlab_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecSlab_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecWall_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureWall_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecWall_RC_Straight />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureWall_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementWall_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarWall_RC_DoubleNet />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarWall_RC_DoubleNet />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementWall_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecWall_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecWall_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureWall_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecWall_RC_Straight />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureWall_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementWall_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarWall_RC_DoubleNet />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarWall_RC_DoubleNet />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementWall_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecWall_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecFoundation_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureFoundation_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecFoundation_RC_Rect />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureFoundation_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementFoundation_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarFoundation_RC_Rect />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarFoundation_RC_Rect />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementFoundation_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecFoundation_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecParapet_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureParapet_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecParapet_RC_TypeI />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureParapet_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementParapet_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarParapet_RC_Single />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarParapet_RC_Single />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementParapet_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecParapet_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecParapet_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureParapet_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecParapet_RC_TypeI />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureParapet_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementParapet_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarParapet_RC_Single />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarParapet_RC_Single />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementParapet_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecParapet_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecParapet_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureParapet_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecParapet_RC_TypeI />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureParapet_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementParapet_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarParapet_RC_Single />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarParapet_RC_Single />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementParapet_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecParapet_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecParapet_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureParapet_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecParapet_RC_TypeI />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureParapet_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementParapet_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarParapet_RC_Single />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarParapet_RC_Single />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementParapet_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecParapet_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecParapet_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureParapet_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecParapet_RC_TypeI />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureParapet_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementParapet_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarParapet_RC_Single />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarParapet_RC_Single />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementParapet_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecParapet_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecParapet_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureParapet_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecParapet_RC_TypeI />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureParapet_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementParapet_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarParapet_RC_Single />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarParapet_RC_Single />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementParapet_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecParapet_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecParapet_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureParapet_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecParapet_RC_TypeI />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureParapet_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementParapet_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarParapet_RC_Single />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarParapet_RC_Single />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementParapet_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecParapet_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecParapet_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecFigureParapet_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecParapet_RC_TypeI />
+                </{https://www.building-smart.or.jp/dl}StbSecFigureParapet_RC>
+                <{https://www.building-smart.or.jp/dl}StbSecBarArrangementParapet_RC>
+                    <{https://www.building-smart.or.jp/dl}StbSecBarParapet_RC_Single />
+                    <{https://www.building-smart.or.jp/dl}StbSecBarParapet_RC_Single />
+                </{https://www.building-smart.or.jp/dl}StbSecBarArrangementParapet_RC>
+            </{https://www.building-smart.or.jp/dl}StbSecParapet_RC>
+            <{https://www.building-smart.or.jp/dl}StbSecSteel />
+        </{https://www.building-smart.or.jp/dl}StbSections>
+        <{https://www.building-smart.or.jp/dl}StbJoints />
+    </{https://www.building-smart.or.jp/dl}StbModel>
+</{https://www.building-smart.or.jp/dl}ST_BRIDGE>

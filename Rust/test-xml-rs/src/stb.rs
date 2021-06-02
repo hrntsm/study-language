@@ -1,9 +1,6 @@
-//TODO: stb ファルダで write.rs と read.rs にしたときはどう呼ぶか調べる
-
-use xml::reader::{EventReader, XmlEvent};
-
 use std::fs::File;
 use std::io::{self, BufReader, Write};
+use xml::reader::{EventReader, XmlEvent};
 
 use xml::writer::{EmitterConfig, EventWriter, Result};
 
@@ -14,9 +11,10 @@ fn indent(size: usize) -> String {
         .fold(String::with_capacity(size * INDENT.len()), |r, s| r + s)
 }
 
-pub fn read(path: &String) {
+pub fn read(path: &String) -> Vec<String> {
     let file = File::open(path).unwrap();
     let file = BufReader::new(file);
+    let mut stb_vec: Vec<String> = Vec::new();
 
     let parser = EventReader::new(file);
     let mut depth = 0;
@@ -26,6 +24,7 @@ pub fn read(path: &String) {
                 name, attributes, ..
             }) => {
                 println!("{}+{}", indent(depth), name);
+                stb_vec.push(["+", &name.to_string()].concat());
                 if attributes.len() > 0 {
                     for attr in attributes {
                         println!("{}  +attr: {}", indent(depth), attr.name);
@@ -36,6 +35,7 @@ pub fn read(path: &String) {
             Ok(XmlEvent::EndElement { name }) => {
                 depth -= 1;
                 println!("{}-{}", indent(depth), name);
+                stb_vec.push(["-", &name.to_string()].concat());
             }
             Err(e) => {
                 println!("Error: {}", e);
@@ -44,15 +44,15 @@ pub fn read(path: &String) {
             _ => {}
         }
     }
+    stb_vec
 }
 
-pub fn write(path: &String) {
+pub fn write_from_cli(path: &String) {
     let mut file = File::create(path).unwrap();
 
     let mut input = io::stdin();
     let mut output = io::stdout();
 
-    //TODO: input の STB を書き出せるようにする。今は CLI でのインプットまち
     let mut writer = EmitterConfig::new()
         .perform_indent(true)
         .create_writer(&mut file);
@@ -81,4 +81,15 @@ fn handle_event<W: Write>(w: &mut EventWriter<W>, line: String) -> Result<()> {
         xml::writer::XmlEvent::Characters(&line).into()
     };
     w.write(event)
+}
+
+pub fn write(path: &String, data: Vec<String>) {
+    let mut file = File::create(path).unwrap();
+
+    let mut writer = EmitterConfig::new()
+        .perform_indent(true)
+        .create_writer(&mut file);
+    for line in data {
+        handle_event(&mut writer, line);
+    }
 }
