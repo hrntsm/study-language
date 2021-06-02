@@ -46,7 +46,7 @@ pub fn read(path: &String) {
     }
 }
 
-pub fn write(path: &String){
+pub fn write(path: &String) {
     let mut file = File::create(path).unwrap();
 
     let mut input = io::stdin();
