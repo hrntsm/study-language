@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocumentElement param="value">
+    <FirstElement>
+        Some Text
+    </FirstElement>
+    <SecondElement param2="somthing">
+        Pre-Text <Inline>Inlined text</Inline> Post-text.
+    </SecondElement>
+</DocumentElement>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div>
+      {% for entry in entries %}
+      <div>
+        <div>id: {{ entry.id }}, text: {{ entry.text }}</div>
+        <from action="/delete" method="post">
+          <input type="hidden" name="id" value="{{ entry.id }}" />
+          <button>delete</button>
+        </from>
+      </div>
+      {% endfor %}
+    </div>
+
+    <from action="/add" method="post">
+      <div>
+        <input name="text" />
+      </div>
+      <div>
+        <button>add</button>
+      </div>
+    </from>
+  </body>
+</html>
