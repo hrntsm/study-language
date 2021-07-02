@@ -15,3 +15,4 @@ askama = "0.10.5"
 rusqlite = { version = "0.25", features = ["bundled"] }
 r2d2 = "0.8.9"
 r2d2_sqlite = "0.18.0"
+serde = { version = "1.0", features = ["derive"] }
