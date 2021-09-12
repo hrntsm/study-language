@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>React</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <h1 class="bg-primary text-white display-4">React</h1>
+    <div class="container mt-4">
+      <div id="root">wait...</div>
+    </div>
+
+    <script type="text/babel">
+      let dom = document.querySelector("#root");
+      let message = "React component page.";
+
+      function Welcome(props) {
+        return (
+          <div className="alert alert-primary">
+            <Calc classes={props.classes} number={props.number} />
+          </div>
+        );
+      }
+
+      function Calc(props) {
+        let total = 0;
+        for (let i = 0; i <= props.number; i++) {
+          total += i;
+        }
+        return <p className={props.classes}>
+          1から{props.number}までは
+          合計は、「{total}」です。</p>;
+      }
+
+      let el = (
+        <div>
+          <h5 className="mb-4">{message}</h5>
+          <Welcome number="10" classes="h3" />
+          <Welcome number="100" classes="h5" />
+          <Calc number="50" classes="h4" />
+          <Calc number="500" classes="h6" />
+        </div>
+      );
+
+      ReactDOM.render(el, dom);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>React</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <h1 class="bg-primary text-white display-4">React</h1>
+    <div class="container mt-4">
+      <div id="root">wait...</div>
+    </div>
+
+    <script type="text/babel">
+      let dom = document.querySelector("#root");
+      let message = "React component page.";
+
+      class Hello extends React.Component {
+        constructor(props) {
+          super(props)
+        }
+
+        render() {
+          return <div className="alert alert-primary">
+            <p className="h4">Hello!!</p>
+          </div>
+        }
+      }
+
+      let el = (
+        <div>
+          <h5 className="mb-4">{message}</h5>
+          <Hello />
+        </div>
+      );
+
+      ReactDOM.render(el, dom);
+    </script>
+  </body>
+</html>
