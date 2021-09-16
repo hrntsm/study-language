@@ -2,6 +2,9 @@
 
 グラフを書くために Recharts を試してみる
 
+csv 読み込み周りはこちらを参考にした。
+- https://github.com/mikehibm/react-csv-example
+
 
 # Getting Started with Create React App
 
