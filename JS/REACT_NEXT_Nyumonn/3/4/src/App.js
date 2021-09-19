@@ -9,10 +9,23 @@ let data = {
 const SampleContext = React.createContext(data);
 
 class App extends Component {
+  newdata = {
+    title: '新しいタイトルです',
+    message: '新しいメッセージです'
+  }
+
   render() {
     return <div>
       <h1 className="bg-primary text-white display-4">React</h1>
       <div className="container">
+        <Title />
+        <Message />
+        <hr />
+        <SampleContext.Provider value={this.newdata}>
+          <Title />
+          <Message />
+        </SampleContext.Provider>
+        <hr />
         <Title />
         <Message />
       </div>
