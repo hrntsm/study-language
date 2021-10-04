@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 
 function useCounter() {
@@ -6,18 +6,19 @@ function useCounter() {
 
   const count: any = () => {
     setNum(num + 1);
-  };
+  }
 
   return [num, count];
 }
 
-
 function AlertMessage(props: any) {
   const [counter, plus] = useCounter();
-
+  
   return <div className="alert alert-primary h5 text-center">
-    <h4>count: {counter} .</h4>
-    <button onClick={plus} className="btn btn-primary">count</button>
+    <h4>count: {counter}</h4>
+    <button onClick={plus} className="btn btn-primary">
+      count
+    </button>
   </div>
 }
 
