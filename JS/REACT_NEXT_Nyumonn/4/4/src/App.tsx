@@ -15,10 +15,10 @@ const tax = (a: number) => {
 }
 
 function useCalc(num = 0, func = (a: number) => { return a }) {
-  const [msg, setMsg] = useState(null);
+  const [msg, setMsg] = useState<JSX.Element>();
 
-  const setValue = (p: number) => {
-    let res = func(p)
+  const setValue: any = (p: any) => {
+    let res: any = func(p)
     setMsg(<p className="h5">※ {p} の結果は、{res} です。</p>)
   }
 
@@ -61,7 +61,7 @@ function CardMessage(props: any) {
 
   return <div className="card p-3 h5 border-primary">
     <h5>{msg}</h5>
-    <input type="number" onChange={onChange}
+    <input type="range" onChange={onChange}
       min="0" max="10000" className="form-control" />
   </div>
 }
