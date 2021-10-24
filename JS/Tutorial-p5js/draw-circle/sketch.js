@@ -25,7 +25,14 @@ class Circle {
 
   draw() {
     if (dist(mouseX, mouseY, this.x, this.y) < this.r) {
-      fill(0, 255, 0);
+      if (mouseIsPressed) {
+        fill(255, 0, 0);
+
+        this.x = mouseX;
+        this.y = mouseY;
+      } else {
+        fill(0, 255, 0);
+      }
     }
     else {
       fill(0, 0, 255);
