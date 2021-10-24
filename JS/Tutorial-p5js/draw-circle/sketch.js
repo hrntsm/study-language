@@ -1,15 +1,20 @@
-let circle;
+let circles = [];
 
 function setup() {
   createCanvas(500, 500);
   ellipseMode(RADIUS);
-  circle = new Circle(100, 200, 50);
+
+  for (let i = 0; i < 10; i++) {
+    circles.push(new Circle(random(width), random(height), random(10, 50)));
+  }
 }
 
 function draw() {
   background(0);
 
-  circle.draw();
+  for (let i = 0; i < circles.length; i++) {
+    circles[i].draw();
+  }
 }
 
 class Circle {
