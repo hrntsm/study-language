@@ -2,12 +2,13 @@ let circle;
 
 function setup() {
   createCanvas(500, 500);
-  ellipseMode(CENTER);
+  ellipseMode(RADIUS);
   circle = new Circle(100, 200, 50);
 }
 
 function draw() {
   background(0);
+
   circle.draw();
 }
 
@@ -23,6 +24,13 @@ class Circle {
   }
 
   draw() {
+    if (dist(mouseX, mouseY, this.x, this.y) < this.r) {
+      fill(0, 255, 0);
+    }
+    else {
+      fill(0, 0, 255);
+    }
+
     ellipse(this.x, this.y, this.r, this.r);
   }
 }
