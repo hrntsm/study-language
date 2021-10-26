@@ -3,7 +3,7 @@ let lines = [];
 function setup() {
   createCanvas(400, 400);
 
-  for (let i = 0; i < 1; i++) {
+  for (let i = 0; i < 100; i++) {
     lines.push(new bLine(new bPoint(random(width), random(height)), new bPoint(random(width), random(height))));
   }
 }
@@ -13,11 +13,24 @@ function draw() {
 
   for (let i = 0; i < lines.length; i++) {
     lines[i].draw();
+  }
 
-    if (lines[i].mouseDist() < 20) {
-      lines[i].intersectPoint();
+  let index = minDistIndex(lines);
+  lines[index].snapPoint();
+}
+
+function minDistIndex(lineArray) {
+  let index = 0;
+  let value = +Infinity;
+  for (let i = 0; i < lineArray.length; i++) {
+    let dist = lineArray[i].mouseDist();
+    if (dist < value) {
+      value = dist;
+      index = i;
     }
   }
+
+  return index;
 }
 
 
@@ -46,7 +59,7 @@ class bLine {
     return Math.abs(this.a1 * mouseX + mouseY + this.b1) / Math.sqrt(this.a1 * this.a1 + 1);
   }
 
-  intersectPoint() {
+  snapPoint() {
     let maxX = Math.max(this.from.x, this.to.x);
     let minX = Math.min(this.from.x, this.to.x);
     let maxY = Math.max(this.from.y, this.to.y);
