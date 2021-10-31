@@ -15,7 +15,9 @@ function draw() {
     lines[i].draw();
   }
 
-  let index, pt = minDistIndex(lines);
+  let index = minDistIndex(lines);
+  let pt = checkWithinLineEndPoint(lines[index], 30);
+
   if (pt) {
     noFill();
     circle(pt.x, pt.y, 10);
@@ -35,30 +37,24 @@ function minDistIndex(lineArray) {
     }
   }
 
-  minPt = null
-  let ptIndex = 0;
-  let ptValue = +Infinity;
-  for (let i = 0; i < lineArray.length; i++) {
-    let fromDist = lineArray[i].from.mouseDist();
-    let toDist = lineArray[i].to.mouseDist();
-
-    minDist = min(fromDist, toDist);
-    minPt = fromDist < toDist ? lineArray[i].from : lineArray[i].to;
-
-    if (minDist < ptValue) {
-      ptValue = minDist;
-      ptIndex = i;
-    }
-  }
-
-  // if (ptValue < 30) {
-    // pt = minPt;
-  // }
-  pt = null
-
-  return index, pt;
+  return index;
 }
 
+function checkWithinLineEndPoint(line, distance = 30) {
+  let fromDist = line.from.mouseDist();
+  let toDist = line.to.mouseDist();
+
+  minDist = min(fromDist, toDist);
+  minPt = fromDist < toDist ? line.from : line.to;
+
+  if (minDist < distance) {
+    pt = minPt;
+  } else {
+    pt = null;
+  }
+
+  return pt;
+}
 
 class bLine {
   from;
