@@ -1,9 +1,14 @@
 let lines = [];
+let fromPt = null;
+let toPt = null;
+let hasFromPt = false;
+let hasToPt = false;
+let clickCount = 0;
 
 function setup() {
   createCanvas(400, 400);
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 1; i++) {
     lines.push(new bLine(new bPoint(random(width), random(height)), new bPoint(random(width), random(height))));
   }
 }
@@ -18,11 +23,55 @@ function draw() {
   let index = minDistIndex(lines);
   let pt = checkWithinLineEndPoint(lines[index], 30);
 
+  // snap to line
   if (pt) {
     noFill();
     circle(pt.x, pt.y, 10);
-  } else {
-    lines[index].snapPoint();
+  } else if (lines[index].mouseDist() < 50) {
+    pt = lines[index].snapPoint();
+  }
+
+  //draw new polyline
+  if (mouseIsPressed) {
+    if (mouseButton === LEFT) {
+      if (!hasFromPt) {
+        fromPt = pt ? pt : new bPoint(mouseX, mouseY);
+        hasFromPt = true;
+      } else if (clickCount > 10) {
+        toPt = pt ? pt : new bPoint(mouseX, mouseY);
+        hasToPt = true;
+        clickCount = 0;
+      }
+      clickCount++;
+      console.log(clickCount);
+    } else if (mouseButton === RIGHT) {
+      hasToPoint = false;
+      hasFromPt = false;
+      fromPt = null;
+      toPt = null;
+    }
+  }
+
+  if (hasFromPt) {
+    if (!hasToPt) {
+      tempLine = new bLine(fromPt, new bPoint(mouseX, mouseY));
+      tempLine.draw();
+    } else if (hasToPt) {
+      lines.push(new bLine(fromPt, toPt));
+      fromPt = toPt;
+      toPt = null;
+      hasFromPt = true;
+      hasToPt = false;
+    }
+  }
+}
+
+function keyPressed() {
+  if (keyCode === ESCAPE) {
+    hasToPoint = false;
+    hasFromPt = false;
+    fromPt = null;
+    toPt = null;
   }
 }
 
@@ -95,7 +144,10 @@ class bLine {
     if (x > minX && x < maxX && y > minY && y < maxY) {
       noFill();
       circle(x, y, 10);
+      return new bPoint(x, y);
     }
+
+    return null;
   }
 }
 
