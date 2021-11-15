@@ -3,6 +3,7 @@ let fromPt = null;
 let toPt = null;
 let hasFromPt = false;
 let hasToPt = false;
+let ptList = [];
 let clickCount = 0;
 
 function setup() {
@@ -37,18 +38,22 @@ function draw() {
       if (!hasFromPt) {
         fromPt = pt ? pt : new bPoint(mouseX, mouseY);
         hasFromPt = true;
+        ptList.push(fromPt);
       } else if (clickCount > 10) {
         toPt = pt ? pt : new bPoint(mouseX, mouseY);
         hasToPt = true;
         clickCount = 0;
+        ptList.push(toPt);
+
       }
       clickCount++;
       console.log(clickCount);
     } else if (mouseButton === RIGHT) {
-      hasToPoint = false;
+      hasToPt = false;
       hasFromPt = false;
       fromPt = null;
       toPt = null;
+      ptList = [];
     }
   }
 
@@ -68,10 +73,11 @@ function draw() {
 
 function keyPressed() {
   if (keyCode === ESCAPE) {
-    hasToPoint = false;
+    hasToPt = false;
     hasFromPt = false;
     fromPt = null;
     toPt = null;
+    ptList = [];
   }
 }
 
