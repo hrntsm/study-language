@@ -5,6 +5,7 @@ let hasFromPt = false;
 let hasToPt = false;
 let ptList = [];
 let clickCount = 0;
+let polyline = [];
 
 function setup() {
   createCanvas(400, 400);
@@ -109,6 +110,29 @@ function checkWithinLineEndPoint(line, distance = 30) {
   }
 
   return pt;
+}
+
+class bPolyline {
+  ptList = [];
+
+  constructor(ptList) {
+    this.ptList = ptList;
+  }
+
+  addPoint(pt) {
+    this.ptList.push(pt);
+  }
+
+  draw() {
+    for (let i = 0; i < this.ptList.length - 1; i++) {
+      line(this.ptList[i].x, this.ptList[i].y, this.ptList[i + 1].x, this.ptList[i + 1].y);
+    }
+  }
+
+  isClosed() {
+    return this.ptList[0].x === this.ptList[this.ptList.length - 1].x && this.ptList[0].y === this.ptList[this.ptList.length - 1].y
+      ? true : false;
+  }
 }
 
 class bLine {
