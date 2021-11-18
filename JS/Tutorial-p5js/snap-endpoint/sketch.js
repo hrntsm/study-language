@@ -34,6 +34,9 @@ function draw() {
   }
 
   //draw new polyline
+  drawNewLine();
+}
+function drawNewLine() {
   if (mouseIsPressed) {
     if (mouseButton === LEFT) {
       if (!hasFromPt) {
